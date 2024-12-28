@@ -882,6 +882,9 @@ a:focus {
 .background-main, .background-main .background-inner {
   background-color: var(--bg-color);
 }
+.background-c, .background-c .background-inner {
+  background-color: var(--bgc);
+}
 
 .background-section, .background-section .background-inner {
   background-color: var(--assistant-color);

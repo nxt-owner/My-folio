@@ -63,6 +63,7 @@
 
 :root .v-dark, :root .v-dark-head {
   --bg-color: #111;
+  --bgc : #1dd8805d;
   --assistant-color: #171717;
   --theme-color: #b3de4f;
   --font-color: #d9d9d9;
@@ -2799,7 +2800,7 @@ a:hover, a:active {
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 180px);
+  transform: translate(-50%, 30px);
 }
 @media only screen and (max-width: 991px) {
   .header-personal .box-img {
