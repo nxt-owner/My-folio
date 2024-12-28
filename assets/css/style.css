@@ -1,13 +1,4 @@
-/*-----------------------------------------------------------
 
-  Template Name: MexDot - Ajax Portfolio Showcase HTML Template
-  Template URI: https://template.dsngrid.com//mexdot
-  Description: MexDot - Ajax Portfolio Showcase HTML Template
-  Author: design_grid
-  Author URI: https://themeforest.net/user/design_grid
-  Version: 1.0.0
-
--------------------------------------------------------------*/
 /*-----------------------------------------------------------
 
     1.  Variables
@@ -41,7 +32,7 @@
 :root, :root .v-light, :root .v-light-head {
   --bg-color: #F3F3F3;
   --bgc : #8baf9e5d;
-  --assistant-color: #E9E9E9;
+  --assistant-color: #ffffff;
   --theme-color: #b3de4f;
   --theme-color-font: #fff;
   --font-color: #5c5c5c;
