@@ -40,6 +40,7 @@
 -------------------------------------------------------------*/
 :root, :root .v-light, :root .v-light-head {
   --bg-color: #F3F3F3;
+  --bgc : #8baf9e5d;
   --assistant-color: #E9E9E9;
   --theme-color: #b3de4f;
   --theme-color-font: #fff;
@@ -275,6 +276,70 @@ body:not(.dsn-cursor-effect) #dsn_cursor, body:not(.dsn-cursor-effect) #dsn_curs
   right: var(--dsn-gap-container);
   bottom: 50px;
   letter-spacing: 2px;
+}
+/* General Styles for Theme Toggle */
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Switch Container */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide Default Checkbox */
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider Styles */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: background-color 0.4s ease;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* Checked State */
+input:checked + .slider {
+  background-color: #b3de4f;
+}
+
+/* Icon Styles */
+.slider .icon {
+  font-size: 18px;
+  color: #fff;
+  transition: opacity 0.3s ease;
+}
+
+/* Hide/Show Icons */
+.slider .sun-icon {
+  opacity: 0;
+}
+
+input:checked + .slider .sun-icon {
+  opacity: 1;
+}
+
+input:checked + .slider .moon-icon {
+  opacity: 0;
 }
 
 .dsnload {
