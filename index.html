@@ -1080,38 +1080,40 @@
 
     </main>
 
+
     <!-- ========== Cursor ========== -->
     <div id="dsn_cursor" class="ball"></div>
     <div id="dsn_cursor_inner" class="ball"></div>
     <!-- ========== End Cursor ========== -->
-    <script>
-document.addEventListener("DOMContentLoaded", () => {
-    const themeToggleSwitch = document.getElementById("theme-toggle-switch");
-    const body = document.body;
 
-    // Check saved theme preference
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-        body.className = savedTheme;
-        themeToggleSwitch.checked = savedTheme === "v-dark";
-    }
-
-    themeToggleSwitch.addEventListener("change", () => {
-        if (themeToggleSwitch.checked) {
-            body.className = "v-dark";
-            localStorage.setItem("theme", "v-dark");
-        } else {
-            body.className = "v-light";
-            localStorage.setItem("theme", "v-light");
-        }
-    });
-});
-
-    </script>
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/plugins/dsn-grid.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const themeToggleSwitch = document.getElementById("theme-toggle-switch");
+            const body = document.body;
+        
+            // Check saved theme preference
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme) {
+                body.className = savedTheme;
+                themeToggleSwitch.checked = savedTheme === "v-dark";
+            }
+        
+            themeToggleSwitch.addEventListener("change", () => {
+                if (themeToggleSwitch.checked) {
+                    body.className = "v-dark";
+                    localStorage.setItem("theme", "v-dark");
+                } else {
+                    body.className = "v-light";
+                    localStorage.setItem("theme", "v-light");
+                }
+            });
+        });
+        
+            </script>
 </body>
 
 

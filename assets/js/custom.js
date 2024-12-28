@@ -419,7 +419,7 @@ const dsnParam = {
     const timer = dsnGrid.pageLoad({
       startTime: 0,
       endTime: 100,
-      duration: 3000,
+      duration: 5000,
 
       onProgress(val) {
         updateVal(val, true);
@@ -445,13 +445,13 @@ const dsnParam = {
       }).to(preloader.find('.bg-load'), {
         yPercent: -100,
         ease: Expo.easeInOut,
-        duration: 1
+        duration: 1.5
       }).to(preloader.find('.bg-load .separator__path'), {
         attr: {
           d: dsnGrid.getData(preloader.find('.bg-load .separator__path').get(0), 'to')
         },
         ease: "Power4.easeInOut",
-        duration: 1
+        duration: 1.5
       }, '-=1.5').fromTo("#main_root", 1, {
         y: 400
       }, {
@@ -534,7 +534,7 @@ const dsnParam = {
       toggle: menu.querySelector("#navbar_toggle"),
       backgroundMain: menu.querySelector(".bg-load:not(.dsn-svg-transition)"),
       svg: menu.querySelector("svg.bg-load path"),
-      //subMenu: $(menu).find("li.nav-item.has-sub-menu > a"),
+      subMenu: $(menu).find("li.nav-item.has-sub-menu > a"),
       back: $(menu).find("li.dsn-back"),
       hamburger: menu.classList.contains('dsn-hamburger'),
       scrDown: 0
