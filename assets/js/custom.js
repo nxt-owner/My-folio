@@ -1539,4 +1539,3 @@ const dsnParam = {
 function sidebarOptions() {
   document.body.classList.toggle('dsn-show-sidebar');
 }
-//# sourceMappingURL=custom.js.map
